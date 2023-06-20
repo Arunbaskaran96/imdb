@@ -1,0 +1,15 @@
+.reg-lbl{
+    color: gold;
+}
+.reg-int{
+    width: 350px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.reg-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

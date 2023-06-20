@@ -1,7 +1,8 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +36,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  background-color: black;
+}
+
+.loading-spinner{
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.loading-text{
+  font-size: 50px;
 }

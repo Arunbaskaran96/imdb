@@ -1,0 +1,92 @@
+
+.movie-container{
+    display: flex;
+    border: 1px solid gold;
+    width: 45%;
+    margin: 15px 25px;
+}
+
+.movie-det{
+    color: whitesmoke;
+}
+.movie-main-container{
+    background: black;
+    height: 100%;
+}
+.movie-card{
+    padding-top: 12px;
+    padding-left: 55px;
+}
+
+.movie-poster{
+    height: 200px;
+    width: 300px;
+    object-fit: contain;
+}
+
+/* movie-detail-css */
+
+.cast{
+    color: gold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mov-det-image{
+    height: 320px;
+    width: 400px;
+    object-fit: contain;
+}
+
+.movie-details-container{
+    background-color: black;
+    padding-top: 25px;
+}
+b{
+    color: gold;
+}
+h5{
+    color: white;
+}
+p{
+    color: white;
+}
+.casting{
+    color: white;
+}
+
+
+/* addmovie */
+
+.addmovie-lbl,.edimovie-lbl{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 7.4px 0px;
+}
+.add-movie-inpt{
+    margin: 3px 0px;
+    width: 350px;
+    height: 33px;
+}
+
+.actors-list{
+    width: 300px;
+    border: 1px solid black;
+    height: 100px;
+    overflow: scroll;
+}
+
+.casting{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span{
+    color: red;
+    margin-left: 5px;
+}
+.add-movie-container,.edit-movie-container{
+    background-color: gainsboro;
+    height: 100vh;
+}

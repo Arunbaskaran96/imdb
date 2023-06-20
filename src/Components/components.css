@@ -1,0 +1,61 @@
+/* topbar css */
+
+.topbar-inpt{
+    width: 450px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+.topbar-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.user-details{
+    color: whitesmoke;
+    font-size: 30px;
+    margin-top: 8px;
+}
+.topbar-btn{
+    margin-right: 10px;
+    height: 40px;
+    width: 70px;
+    margin-top: 10px;
+}
+.topbar-userdetails{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 3px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+}
+
+
+/* categories */
+
+.cat-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding-bottom: 20px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.cat-list{
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    border: 1px solid gold;
+    padding: 5px;
+    background-color: gold;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.cat-list:hover{
+    transform: scale(1.2)
+}
+

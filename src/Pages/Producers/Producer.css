@@ -1,0 +1,59 @@
+.producer-card{
+    display: flex;
+    border: 1px solid pink;
+    width: 30%;
+    margin: 10px 12px;
+}
+.producer-img{
+    height: 180px;
+    width: 200px;
+    object-fit: cover;
+}
+.producer-details{
+    padding-top: 12px;
+    padding-left: 5px;
+}
+
+.producer-container{
+    padding: 10px 0px;
+    background-color: black;
+}
+
+.producer-name,.producer-dob,.producer-gender,.producer-label{
+    color: white;
+}
+.producer-btn{
+    margin-left: 25px;
+    margin-top:15px ;
+}
+
+span{
+    color: red;
+}
+
+
+/* addproducer-css */
+.addproducer-lbl{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin-bottom: 18.5px;
+}
+.add-producer-inpt{
+    width: 350px;
+    margin-bottom: 15px;
+}
+
+
+
+/* edit-producer-css */
+
+.editproducer-lbl{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin-bottom: 18.5px;
+}
+
+.edit-producer-inpt{
+    width: 350px;
+    margin-bottom: 15.5px;
+}

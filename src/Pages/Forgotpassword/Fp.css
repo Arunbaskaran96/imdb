@@ -1,0 +1,28 @@
+.fp-lbl{
+    color: gold;
+    font-size: 25px;
+}
+
+.fb-inpt{
+    height: 33px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.forgot-container{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+.fp-card{
+    border: 1px solid wheat;
+    padding: 30px;
+    box-shadow: 5px 5px 5px whitesmoke;
+    border-radius: 10px;
+}
+
+.fp-span{
+    margin-bottom: 15px;
+}

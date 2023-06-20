@@ -1,0 +1,48 @@
+h4,h6{
+    color: gold;
+}
+
+.login-container{
+    background-color: black;
+    box-shadow: 5px 5px 5px gold;
+    border-radius: 20px;
+    padding: 20px;
+}
+.login-main-card{
+    background-color: whitesmoke;
+    height: 100vh;
+    /* padding: 120px; */
+    padding: 85px 120px 120px 120px;
+}
+
+.login-label{
+    font-size: 20px;
+    margin-left: -250px;
+    color: gold;
+}
+
+.email{
+    margin-left: -280px;
+}
+
+
+.login-inpt{
+    width: 350px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+.login-rightside{
+    padding-top: 40px;
+    border-left: 2px solid wheat;
+}
+
+
+
+span{
+    color: red;
+}
+
+.sample-login{
+    margin-top: 25px;
+}
