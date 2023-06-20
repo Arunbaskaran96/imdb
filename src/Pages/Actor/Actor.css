@@ -55,6 +55,11 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 17px;
     margin-bottom: 10px;
+    color: gold;
+  }
+
+  .add-actor-lbl{
+    color: gold;
   }
 
 

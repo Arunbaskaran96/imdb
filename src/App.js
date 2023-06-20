@@ -26,8 +26,8 @@ function App() {
         <Route path="Actors" element={<Actor/>}/>
         <Route path="Movies" element={<Movie/>}></Route>
         <Route path="Producers" element={<Producer/>}></Route>
-        <Route path="moviedetail/:id" element={<MoviesDetails/>}></Route>
       </Route>
+      <Route path="/moviedetail/:id" element={<MoviesDetails/>}></Route>
       <Route path="/addmovie" element={<Addmovie/>}></Route>
       <Route path="/editmovie/:id" element={<Editmovie/>} />
       <Route path="/addactor" element={<Addactor/>}></Route>

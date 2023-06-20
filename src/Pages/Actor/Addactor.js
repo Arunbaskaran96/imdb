@@ -66,12 +66,12 @@ function Addactor() {
                 <div className='col-8'>
                     <input className='add-actor-inpt' name='name' value={formik.values.name} onChange={formik.handleChange}/><span>{formik.errors.name}</span><br/>
                     <input type="date" className='add-actor-inpt' name='dob' value={formik.values.dob} onChange={formik.handleChange}/><span>{formik.errors.dob}</span><br/>
-                    <input type='radio' id='male' name='gender' value="Male" onChange={formik.handleChange}/>
-                    <label for="male">Male</label>
+                    <input  type='radio' id='male' name='gender' value="Male" onChange={formik.handleChange}/>
+                    <label className='add-actor-lbl' for="male">Male</label>
                     <input style={{marginLeft:"40px"}} type="radio" id='female' name='gender' value="Female" onChange={formik.handleChange}/>
-                    <label for="female">Female</label>
+                    <label className='add-actor-lbl' for="female">Female</label>
                     <input  style={{marginLeft:"40px"}} type="radio" id='others' name='gender' value="Others" onChange={formik.handleChange}/>
-                    <label for="otyers">Others</label><span>{formik.errors.gender}</span><br/>
+                    <label  className='add-actor-lbl' for="otyers">Others</label><span>{formik.errors.gender}</span><br/>
                     <input className='add-actor-inpt' name='bio' value={formik.values.bio} onChange={formik.handleChange}/><span>{formik.errors.bio}</span><br/>
                     <input className='add-actor-inpt' name='img' value={formik.values.img} onChange={formik.handleChange}/><span>{formik.errors.img}</span><br/>
                     <input className='btn btn-success add-actor-inpt' type='submit' value="Submit"/>

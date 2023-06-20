@@ -17,7 +17,7 @@ function Topbar() {
 
   const getUser=async()=>{
     try {
-      const {data}=await axios.get("http://localhost:8000/user",{
+      const {data}=await axios.get("https://imdbwebapi.onrender.com/user",{
         headers:{
           Authorization:`${window.localStorage.getItem("token")}`
         }

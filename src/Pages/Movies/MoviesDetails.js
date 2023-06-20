@@ -47,7 +47,7 @@ function MoviesDetails() {
         <div className='col-4'>
             <img className='mov-det-image' src={movie.poster}/>
         </div>
-        <div className='col-8'>
+        <div className='col-8' style={{marginTop:"40px"}}>
             <div>
                 <h5><b>Name : </b>{movie.name}</h5>
                 <h5><b>Director : </b>{movie.director}</h5>

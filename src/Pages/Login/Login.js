@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Login.css"
 import { useFormik } from 'formik'
 import axios from 'axios'
@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 function Login() {
     const nav=useNavigate()
+    const[disable,setDisable]=useState(false)
     const formik=useFormik({
         initialValues:{
             email:"",
@@ -25,13 +26,14 @@ function Login() {
         },
         onSubmit:async(value)=>{
             try {
+            setDisable(true)
               const {data}=  await axios.post("https://imdbwebapi.onrender.com/signin",value)
               window.localStorage.setItem("token",data.token)
-              window.localStorage.setItem("user",JSON.stringify(data.user))
               nav("/portal/Movies")
             } catch (error) {
                 console.log(error)
                 alert("Incorrect Username/Password")
+                setDisable(false)
             }
         }
     })
@@ -51,13 +53,13 @@ function Login() {
             </div>
             <div className='col-7 login-rightside' style={{textAlign:"center"}} >
                 <form onSubmit={formik.handleSubmit}>
-                    <label for="email" className='login-label email' placeholder='Enter your email here' >Email</label><br/>
-                    <input name='email' value={formik.values.email} onChange={formik.handleChange} id='email' className='login-inpt' type='email' /><br/>
+                    <label for="email" className='login-label email'>Email</label><br/>
+                    <input name='email' value={formik.values.email}  placeholder='Enter your email here'  onChange={formik.handleChange} id='email' className='login-inpt' type='email' /><br/>
                     <span>{formik.errors.email}</span><br/>
                     <label for="pass" className='login-label password'>Password</label><br/>
                     <input name='password'  value={formik.values.password} onChange={formik.handleChange} id='pass' className='login-inpt' type='password'  placeholder='Enter your password here'/><br/>
                     <span>{formik.errors.password}</span><br/>
-                    <input className='login-inpt btn btn-success' type='submit' value="Sign in" style={{marginTop:"20px"}} />
+                    <input disabled={disable} className='login-inpt btn btn-success' type='submit' value="Sign in" style={{marginTop:"20px"}} />
                 </form>
                 <Link className='login-inpt btn btn-primary' to="/forgot-password" style={{marginTop:"10px"}}>Forgot Password</Link><br/>
                 <Link className='login-inpt btn btn-secondary' to="/register" style={{marginTop:"10px"}}>Sign up</Link><br/>

@@ -74,9 +74,6 @@ function Addmovie() {
             if(!value.cast){
                 errors.cast="Please Fill The Cast"
             }
-            if(!value.images){
-                errors.images="Please Enter The Image URL"
-            }
             if(!value.synopsis){
                 errors.synopsis="Please Fill The Synopsis"
             }
@@ -111,7 +108,6 @@ function Addmovie() {
                     <label className='addmovie-lbl'>Released Year : </label><br/>
                     <label className='addmovie-lbl'>Genre : </label><br/>
                     <label className='addmovie-lbl'>Poster : </label><br/>
-                    <label className='addmovie-lbl'>Images : </label><br/>
                     <label className='addmovie-lbl'>Synopsis : </label><br/>
                     <label className='addmovie-lbl'>Producer : </label><br/>
                     <label style={{marginTop:"110px"}} className='addmovie-lbl'>cast : </label><br/>
@@ -122,7 +118,6 @@ function Addmovie() {
                     <input type='text' name='year' value={formik.values.year} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.year}</span><br/>
                     <input name='genre' value={formik.values.genre} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.genre}</span><br/>
                     <input name='poster' value={formik.values.poster} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.poster}</span><br/>
-                    <input name='images' value={formik.values.images} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.images}</span><br/>
                     <input name='synopsis' value={formik.values.synopsis} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.synopsis}</span><br/>
                     <input name='producer' value={formik.values.producer} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.producer}</span><br/>
                     <div className='actors-list'>
