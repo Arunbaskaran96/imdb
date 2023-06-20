@@ -19,7 +19,7 @@ function Producerdetails() {
 
     const getMovies=async()=>{
         try {
-            const {data}= await axios.get(`http://localhost:8000/filterproducermovie/${params.id}`,{
+            const {data}= await axios.get(`https://imdbwebapi.onrender.com/filterproducermovie/${params.id}`,{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }
@@ -33,7 +33,7 @@ function Producerdetails() {
 
     const getProducer=async()=>{
         try {
-            const {data}=await axios.get(`http://localhost:8000/getproducer/${params.id}`,{
+            const {data}=await axios.get(`https://imdbwebapi.onrender.com/getproducer/${params.id}`,{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }

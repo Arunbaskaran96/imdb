@@ -16,7 +16,7 @@ function Producer() {
 
     const getProducer=async()=>{
         try {
-            const {data}=await axios.get("http://localhost:8000/getproducer",{
+            const {data}=await axios.get("https://imdbwebapi.onrender.com/getproducer",{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }

@@ -16,7 +16,7 @@ function Actor() {
 
     const getActorData=async()=>{
         try {
-            const {data}= await axios.get('http://localhost:8000/getactors',{
+            const {data}= await axios.get('https://imdbwebapi.onrender.com/getactors',{
               headers:{
                   Authorization:`${window.localStorage.getItem("token")}`
               }

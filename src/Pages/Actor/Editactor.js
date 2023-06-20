@@ -15,7 +15,7 @@ function Editactor() {
 
     const getActor=async()=>{
         try {
-           const {data}=await axios.get(`http://localhost:8000/getactor/${params.id}`,{
+           const {data}=await axios.get(`https://imdbwebapi.onrender.com/getactor/${params.id}`,{
             headers:{
                 Authorization:`${window.localStorage.getItem("token")}`
             }
@@ -57,7 +57,7 @@ function Editactor() {
         },
         onSubmit:async(value)=>{
             try {
-                await axios.put(`http://localhost:8000/editactor/${params.id}`,value,{
+                await axios.put(`https://imdbwebapi.onrender.com/editactor/${params.id}`,value,{
                     headers:{
                         Authorization:`${window.localStorage.getItem("token")}`
                     }

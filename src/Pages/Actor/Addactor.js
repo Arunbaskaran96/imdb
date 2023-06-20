@@ -35,7 +35,7 @@ function Addactor() {
         },
         onSubmit:async(value)=>{
             try {
-                await axios.post("http://localhost:8000/addactor",value,{
+                await axios.post("https://imdbwebapi.onrender.com/addactor",value,{
                     headers:{
                         Authorization:`${window.localStorage.getItem("token")}`
                     }

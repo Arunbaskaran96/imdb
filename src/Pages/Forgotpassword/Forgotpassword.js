@@ -20,7 +20,7 @@ function Forgotpassword() {
         },
         onSubmit:async(value)=>{
             try {
-                await axios.post("http://localhost:8000/forgot",value)
+                await axios.post("https://imdbwebapi.onrender.com/forgot",value)
                 alert("Link Sent To Your Mail Id")
                 nav("/")
             } catch (error) {

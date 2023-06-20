@@ -40,7 +40,7 @@ function Register() {
         },
         onSubmit:async(value)=>{
             try {
-                await axios.post("http://localhost:8000/adduser",value)
+                await axios.post("https://imdbwebapi.onrender.com/adduser",value)
                 alert("Your Account Created Successfully")
                 nav("/")
             } catch (error) {

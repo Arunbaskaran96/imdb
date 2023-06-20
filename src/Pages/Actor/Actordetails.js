@@ -20,7 +20,7 @@ function Actordetails(){
 
     const getActor=async()=>{
         try {
-            const {data}=await axios.get(`http://localhost:8000/getactor/${params.id}`,{
+            const {data}=await axios.get(`https://imdbwebapi.onrender.com/getactor/${params.id}`,{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }
@@ -34,7 +34,7 @@ function Actordetails(){
 
     const getMovies=async()=>{
         try {
-            const {data}= await axios.get(`http://localhost:8000/filtermovie/${params.id}`,{
+            const {data}= await axios.get(`https://imdbwebapi.onrender.com/filtermovie/${params.id}`,{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }

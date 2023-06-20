@@ -14,7 +14,7 @@ function Addmovie() {
     },[])
     const getActor=async()=>{
         try {
-            const {data}=await axios.get("http://localhost:8000/getactors",{
+            const {data}=await axios.get("https://imdbwebapi.onrender.com/getactors",{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }
@@ -27,7 +27,7 @@ function Addmovie() {
 
     const getProducer=async()=>{
         try {
-            const {data}=await axios.get("http://localhost:8000/getproducer",{
+            const {data}=await axios.get("https://imdbwebapi.onrender.com/getproducer",{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }
@@ -84,7 +84,7 @@ function Addmovie() {
         },
         onSubmit:async(value)=>{
             try {
-                await axios.post("http://localhost:8000/addmovie",value,{
+                await axios.post("https://imdbwebapi.onrender.com/addmovie",value,{
                     headers:{
                         Authorization:`${window.localStorage.getItem("token")}`
                     }

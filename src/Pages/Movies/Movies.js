@@ -15,7 +15,7 @@ function Movies() {
 
     const getMovies=async()=>{
         try {
-            const result=await axios.get("http://localhost:8000/movies",{
+            const result=await axios.get("https://imdbwebapi.onrender.com/movies",{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }

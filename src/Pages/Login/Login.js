@@ -25,7 +25,7 @@ function Login() {
         },
         onSubmit:async(value)=>{
             try {
-              const {data}=  await axios.post("http://localhost:8000/signin",value)
+              const {data}=  await axios.post("https://imdbwebapi.onrender.com/signin",value)
               window.localStorage.setItem("token",data.token)
               window.localStorage.setItem("user",JSON.stringify(data.user))
               nav("/portal/Movies")

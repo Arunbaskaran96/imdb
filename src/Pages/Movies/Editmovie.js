@@ -18,7 +18,7 @@ function Editmovie() {
 
     const getActor=async()=>{
         try {
-            const {data}=await axios.get("http://localhost:8000/getactors",{
+            const {data}=await axios.get("https://imdbwebapi.onrender.com/getactors",{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }
@@ -31,7 +31,7 @@ function Editmovie() {
 
     const getProducer=async()=>{
         try {
-            const {data}=await axios.get("http://localhost:8000/getproducer",{
+            const {data}=await axios.get("https://imdbwebapi.onrender.com/getproducer",{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }
@@ -44,7 +44,7 @@ function Editmovie() {
 
     const getMovie=async()=>{
         try {
-            const {data}=await axios.get(`http://localhost:8000/movie/${params.id}`,{
+            const {data}=await axios.get(`https://imdbwebapi.onrender.com/movie/${params.id}`,{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }
@@ -99,7 +99,7 @@ function Editmovie() {
         },
         onSubmit:async(value)=>{
             try {
-                await axios.put(`http://localhost:8000/editmovie/${params.id}`,value,{
+                await axios.put(`https://imdbwebapi.onrender.com/editmovie/${params.id}`,value,{
                     headers:{
                         Authorization:`${window.localStorage.getItem("token")}`
                     }

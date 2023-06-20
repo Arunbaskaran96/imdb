@@ -41,7 +41,7 @@ function Addproducer() {
         },
         onSubmit:async(value)=>{
             try {
-                await axios.post("http://localhost:8000/addproducer",value,{
+                await axios.post("https://imdbwebapi.onrender.com/addproducer",value,{
                     headers:{
                         Authorization:`${window.localStorage.getItem("token")}`
                     }

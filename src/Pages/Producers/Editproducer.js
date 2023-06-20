@@ -15,7 +15,7 @@ function Editproducer() {
 
     const getProducer=async()=>{
         try {
-            const {data} = await axios.get(`http://localhost:8000/getproducer/${params.id}`,{
+            const {data} = await axios.get(`https://imdbwebapi.onrender.com/getproducer/${params.id}`,{
                 headers:{
                     Authorization:`${window.localStorage.getItem("token")}`
                 }
@@ -61,7 +61,7 @@ function Editproducer() {
         },
         onSubmit:async(value)=>{
             try {
-                await axios.put(`http://localhost:8000/editproducer/${params.id}`,value,{
+                await axios.put(`https://imdbwebapi.onrender.com/editproducer/${params.id}`,value,{
                     headers:{
                         Authorization:`${window.localStorage.getItem("token")}`
                     }
