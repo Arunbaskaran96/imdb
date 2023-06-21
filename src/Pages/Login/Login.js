@@ -40,7 +40,7 @@ function Login() {
   return (
     <div className='container-fluid login-main-card'>
         <div className='row  login-container'>
-            <div className='col-5'>
+            <div className='col-md-5 login-left'>
                 <h4>Benefits of your free IMDb account</h4>
                 <h6>Personalized Recommendations</h6>
                 <p>Discover shows you'll love.</p>
@@ -51,7 +51,7 @@ function Login() {
                 <h6>Contribute to IMDb</h6>
                 <p>Add data that will be seen by millions of people and get cool badges.</p>
             </div>
-            <div className='col-7 login-rightside' style={{textAlign:"center"}} >
+            <div className='col-md-7 login-rightside' style={{textAlign:"center"}} >
                 <form onSubmit={formik.handleSubmit}>
                     <label for="email" className='login-label email'>Email</label><br/>
                     <input name='email' value={formik.values.email}  placeholder='Enter your email here'  onChange={formik.handleChange} id='email' className='login-inpt' type='email' /><br/>

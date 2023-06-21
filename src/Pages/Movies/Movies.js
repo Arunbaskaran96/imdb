@@ -37,10 +37,10 @@ function Movies() {
     :
     <div className='container-fluid movie-main-container'>
         <div className='row'  style={{marginBottom:"20px"}}>
-            <div className='col-3'>
+            <div className='col-md-3'>
                 <Link to="/addmovie" className='btn btn-success btn-sm'>Add new movie</Link>
             </div>
-            <div className='col-8' style={{textAlign:"start"}}>
+            <div className='col-md-8' style={{textAlign:"start"}}>
                 <input className='actor-search' placeholder='Search here.....' onChange={(e)=>{
                   setSearch(e.target.value)
                 }}/>
@@ -52,7 +52,7 @@ function Movies() {
                     return search.toLowerCase()===""?item : item.name.toLowerCase().includes(search.toLowerCase())
                 }).map((d)=>{
                     return(
-                        <div className='col-6 movie-container'>
+                        <div className='col-md-6 movie-container'>
                         <div>
                             <img className='movie-poster' src={d.poster}/>
                         </div>

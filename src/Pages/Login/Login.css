@@ -46,3 +46,29 @@ span{
 .sample-login{
     margin-top: 25px;
 }
+
+
+@media only Screen and (max-width : 768px){
+    .login-left{
+        display: none;
+    }
+    .body{
+        background-color: black;
+    }
+    .login-container{
+        padding: 0px;
+        margin-top: 30px;
+        box-shadow: none;
+        border: none;
+        padding-bottom: 30px;
+    }
+    .login-main-card{
+        height: 100%;
+        width: 94%;
+        padding: 0px;
+    }
+    .sample-login{
+        padding-bottom: 70px;
+    }
+    
+}

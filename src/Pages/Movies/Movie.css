@@ -24,6 +24,8 @@
     object-fit: contain;
 }
 
+
+
 /* movie-detail-css */
 
 .cast{
@@ -63,7 +65,7 @@ p{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 7.4px 0px;
 }
-.add-movie-inpt{
+.add-movie-inpt,.add-movie-inpts{
     margin: 3px 0px;
     width: 350px;
     height: 33px;
@@ -89,4 +91,27 @@ span{
 .add-movie-container,.edit-movie-container{
     background-color: gainsboro;
     height: 100vh;
+}
+
+
+@media only Screen and (max-width : 1084px){
+    .movie-container{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .actor-search{
+        margin-top: 15px;
+    }
+    .movie-details-container,.mov-det-image{
+        width: 100%;
+    }
+    .addmovie-labels{
+        display: none;
+    }
+    .add-movie-container{
+        height: 100%;
+    }
+    .add-movie-inpt{
+        margin: 0px;
+    }
 }

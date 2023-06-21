@@ -39,15 +39,15 @@ function MoviesDetails() {
     :
     (    <div className='container-fluid'>
              <div className='row'>
-                <div className='col-3'>
+                <div className='col-md-3'>
                     <Link to="/portal/Movies" className='btn btn-info btn-sm'>Back</Link>
                 </div>
              </div>
     <div className='row  movie-details-container'>
-        <div className='col-4'>
+        <div className='col-md-4'>
             <img className='mov-det-image' src={movie.poster}/>
         </div>
-        <div className='col-8' style={{marginTop:"40px"}}>
+        <div className='col-md-8' style={{marginTop:"40px"}}>
             <div>
                 <h5><b>Name : </b>{movie.name}</h5>
                 <h5><b>Director : </b>{movie.director}</h5>
@@ -66,7 +66,7 @@ function MoviesDetails() {
         {
             movie.cast.map((data,idx)=>{
                 return(
-                    <div key={idx} className='col-3 casting'><span>{idx+1} . </span>{data}</div>
+                    <div key={idx} className='col-md-3 casting'><span>{idx+1} . </span>{data}</div>
                 )
             })
         }

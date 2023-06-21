@@ -43,6 +43,10 @@
     margin: 0px;
     margin-bottom: 20px;
 }
+.topbar-name{
+    margin-top: 10px;
+    font-size: 30px;
+}
 
 .cat-list{
     list-style-type: none;
@@ -59,3 +63,20 @@
     transform: scale(1.2)
 }
 
+
+@media only Screen and (max-width : 768px){
+    .topbar-name{
+      display: none;
+    }
+    #home_img{
+        height: 70px;
+        width: 70px;
+    }
+    .user-details{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .topbar-container{
+        width: 100%;
+    }
+  }

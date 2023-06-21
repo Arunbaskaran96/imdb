@@ -96,13 +96,13 @@ function Addmovie() {
   return (
     <div className='container-fluid add-movie-container'>
         <div className='row'>
-            <div className='col-3'>
+            <div className='col-md-3'>
                 <Link to="/portal/Movies" className='btn btn-info btn-sm'>Back</Link>
             </div>
         </div>
         <form onSubmit={formik.handleSubmit}>
             <div className='row'>
-                <div className='col-4' style={{textAlign:"end"}}>
+                <div className='col-md-4 addmovie-labels' style={{textAlign:"end"}}>
                     <label className='addmovie-lbl'>Movie Name : </label><br/>
                     <label className='addmovie-lbl'>Director : </label><br/>
                     <label className='addmovie-lbl'>Released Year : </label><br/>
@@ -112,14 +112,14 @@ function Addmovie() {
                     <label className='addmovie-lbl'>Producer : </label><br/>
                     <label style={{marginTop:"110px"}} className='addmovie-lbl'>cast : </label><br/>
                 </div>
-                <div className='col-8'>
-                    <input type='text' name='name' value={formik.values.name} onChange={formik.handleChange} className='add-movie-inpt'/><span>{formik.errors.name}</span><br/>
-                    <input type='text' name='director' value={formik.values.director} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.director}</span><br/>
-                    <input type='text' name='year' value={formik.values.year} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.year}</span><br/>
-                    <input name='genre' value={formik.values.genre} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.genre}</span><br/>
-                    <input name='poster' value={formik.values.poster} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.poster}</span><br/>
-                    <input name='synopsis' value={formik.values.synopsis} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.synopsis}</span><br/>
-                    <input name='producer' value={formik.values.producer} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.producer}</span><br/>
+                <div className='col-md-8'>
+                    <input type='text' name='name' placeholder='Enter The Movie Name' value={formik.values.name} onChange={formik.handleChange} className='add-movie-inpt'/><span>{formik.errors.name}</span><br/>
+                    <input type='text' name='director'  placeholder='Enter The Director Name' value={formik.values.director} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.director}</span><br/>
+                    <input type='text' name='year'  placeholder='Enter The Released Year' value={formik.values.year} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.year}</span><br/>
+                    <input name='genre'  placeholder='Enter The Genre' value={formik.values.genre} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.genre}</span><br/>
+                    <input name='poster' placeholder='Enter The Poster URL'  value={formik.values.poster} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.poster}</span><br/>
+                    <input name='synopsis' placeholder='Enter The Synopsis' value={formik.values.synopsis} onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.synopsis}</span><br/>
+                    <input name='producer' placeholder='Enter The Producer Name' value={formik.values.producer} onChange={formik.handleChange}  className='add-movie-inpts'/><span>{formik.errors.producer}</span><br/>
                     <div className='actors-list'>
                     {
                                 producer.map((d)=>{
@@ -132,7 +132,7 @@ function Addmovie() {
                                 })
                             }
                     </div>
-                    <input name='cast' value={formik.values.cast}   onChange={formik.handleChange}  className='add-movie-inpt'/><span>{formik.errors.cast}</span><br/>
+                    <input name='cast' value={formik.values.cast} placeholder='Enter The Cast Details'  onChange={formik.handleChange}  className='add-movie-inpts'/><span>{formik.errors.cast}</span><br/>
                     <div className='actors-list'>
                     {
                                 actor.map((d)=>{
