@@ -93,3 +93,23 @@
     height: 50vh;
     align-items: center;
   }
+
+
+  @media only Screen and (max-width :768px){
+    .actor-minicontainer{
+      flex-wrap: wrap;
+    }
+    .actor-card{
+      width: 90%;
+    }
+    .actor-search{
+      margin-left: 20px;
+      height: 45px;
+    }
+    .actor-det-right{
+      width: 90%;
+    }
+    .actor-img{
+      width: 100%;
+    }
+  }

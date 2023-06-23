@@ -57,15 +57,15 @@ function Actordetails(){
         :
         <div className="conatiner-fluid">
         <div className="row">
-            <div className="col3" style={{marginTop:"20px"}}>
+            <div className="col-md-3" style={{marginTop:"20px"}}>
                 <Link to="/portal/Actors"  className="btn btn-primary btn-sm">Back</Link>
             </div>
         </div>
         <div className="row" style={{marginTop:"30px"}}>
-            <div className="col-4">
+            <div className="col-md-4">
                 <img className="act-det-img" src={actor.img} alt="actor-image"/>
             </div>
-            <div className="col-8" style={{marginTop:"50px"}}>
+            <div className="col-md-8 actor-det-right" style={{marginTop:"50px"}}>
                 <h5><b>Name : </b>{actor.name}</h5>
                 <h5><b>Date of Birth : </b>{actor.dob}</h5>
                 <h5><b>Gender : </b>{actor.gender}</h5>
@@ -77,7 +77,7 @@ function Actordetails(){
             {
                 movies.length>0?movies.map((d)=>{
                     return(
-                        <div className='col-4 movie-container'>
+                        <div className='col-md-4 movie-container'>
                         <div>
                             <img className='movie-poster' src={d.poster}/>
                         </div>

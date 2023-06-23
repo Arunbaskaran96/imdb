@@ -64,11 +64,14 @@ span{
     }
     .login-main-card{
         height: 100%;
-        width: 94%;
+        width: 90%;
         padding: 0px;
     }
     .sample-login{
         padding-bottom: 70px;
+    }
+    .login-inpt{
+        width: 300px;
     }
     
 }

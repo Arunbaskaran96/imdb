@@ -57,3 +57,35 @@ span{
     width: 350px;
     margin-bottom: 15.5px;
 }
+
+
+@media only Screen and (max-width : 768px){
+    .producer-card{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .producer-img{
+        width: 330px;
+    }
+    .producer-details{
+        margin-left: 50px;
+    }
+    .act-det-img{
+        width: 350px;
+    }
+    .add-proucer-container{
+        width: 60vh;
+    }
+    .addproducer-lbl{
+        display: none;
+    }
+
+    .addproducer-inputs{
+        margin-left: -115px;
+        margin-top: 25px;
+    }
+    .add-producer-inpt{
+        width: 300px;
+        height: 40px;
+    }
+}

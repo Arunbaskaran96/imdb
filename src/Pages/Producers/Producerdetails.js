@@ -55,16 +55,16 @@ function Producerdetails() {
     :
     <div className='container-fluid'>
     <div className='row'>
-        <div className='col-3'>
+        <div className='col-md-3'>
             <Link to="/portal/Producers"  className="btn btn-primary btn-sm">Back</Link>
         </div>
     </div>
     if(producer){
         <div className="row" style={{marginTop:"30px"}}>
-        <div className="col-4">
+        <div className="col-md-4">
             <img className="act-det-img" src={producer.img} alt="actor-image"/>
         </div>
-        <div className="col-8" style={{marginTop:"50px"}}>
+        <div className="col-md-8" style={{marginTop:"50px"}}>
             <h5><b>Name : </b>{producer.name}</h5>
             <h5><b>Date of Birth : </b>{producer.dob}</h5>
             <h5><b>Gender : </b>{producer.gender}</h5>
@@ -78,7 +78,7 @@ function Producerdetails() {
         {
             movies.length>0?movies.map((d)=>{
                 return(
-                    <div className='col-4 movie-container'>
+                    <div className='col-md-4 movie-container'>
                     <div>
                         <img className='movie-poster' src={d.poster}/>
                     </div>

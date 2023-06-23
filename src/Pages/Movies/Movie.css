@@ -101,6 +101,7 @@ span{
     }
     .actor-search{
         margin-top: 15px;
+        margin-left: 5px;
     }
     .movie-details-container,.mov-det-image{
         width: 100%;

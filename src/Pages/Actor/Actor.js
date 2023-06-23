@@ -41,10 +41,10 @@ function Actor() {
     </div>:
     <div className='container-fluid actor-container'>
     <div className='row' style={{marginBottom:"20px"}}>
-      <div className='col-3' style={{marginBottom:"20px",marginLeft:"15px"}}>
+      <div className='col-md-3' style={{marginBottom:"20px",marginLeft:"15px"}}>
          <Link to="/addactor" className='btn btn-primary'> Add Actor</Link>
       </div>
-      <div className='col-8' style={{textAlign:"start"}}>
+      <div className='col-md-8' style={{textAlign:"start"}}>
       <input className='actor-search' placeholder='Search here.....' onChange={(e)=>{
         setSearch(e.target.value)
       }}/>
@@ -56,7 +56,7 @@ function Actor() {
           return search.toLowerCase()===""?item : item.name.toLowerCase().includes(search.toLowerCase())
         }).map((data)=>{
           return(
-            <div className='col-sm-4  col-md-4 actor-card'>
+            <div className='col-md-4 actor-card'>
               <div className='actor-minicontainer'>
                 <div>
                   <img className='actor-img' src={data.img} alt='actor-image'/>

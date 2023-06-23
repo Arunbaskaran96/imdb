@@ -70,16 +70,16 @@ function Addproducer() {
                     <label className='addproducer-lbl'>Bio : </label><br/>
                     <label className='addproducer-lbl'>Gender : </label><br/>
                 </div>
-                <div className='col-8'>
-                    <input name='name' className='add-producer-inpt' value={formik.values.name} onChange={formik.handleChange}/><span>{formik.errors.name}</span><br/>
-                    <input type='date' name='dob' className='add-producer-inpt' value={formik.values.dob} onChange={formik.handleChange}/><span>{formik.errors.dob}</span><br/>
-                    <input name='label' className='add-producer-inpt' value={formik.values.label} onChange={formik.handleChange}/><span>{formik.errors.label}</span><br/>
-                    <input name='img' className='add-producer-inpt' value={formik.values.img} onChange={formik.handleChange}/><span>{formik.errors.img}</span><br/>
-                    <input name='bio'className='add-producer-inpt' value={formik.values.bio} onChange={formik.handleChange}/><span>{formik.errors.bio}</span><br/>
+                <div className='col-8 addproducer-inputs'>
+                    <input placeholder='Enter The Producer Name' name='name' className='add-producer-inpt' value={formik.values.name} onChange={formik.handleChange}/><span>{formik.errors.name}</span><br/>
+                    <input  placeholder='Enter The Producer DOB' type='date' name='dob' className='add-producer-inpt' value={formik.values.dob} onChange={formik.handleChange}/><span>{formik.errors.dob}</span><br/>
+                    <input placeholder='Enter The Production Name' name='label' className='add-producer-inpt' value={formik.values.label} onChange={formik.handleChange}/><span>{formik.errors.label}</span><br/>
+                    <input placeholder='Enter The Producer Img URL' name='img' className='add-producer-inpt' value={formik.values.img} onChange={formik.handleChange}/><span>{formik.errors.img}</span><br/>
+                    <input placeholder='Enter The Producer Bio' name='bio'className='add-producer-inpt' value={formik.values.bio} onChange={formik.handleChange}/><span>{formik.errors.bio}</span><br/>
                     <input name='gender' type='radio' id='male' value="Male" onChange={formik.handleChange} /><label style={{marginRight:"35px"}} for="male">Male</label>
                     <input name='gender' type='radio'  id='female' value="Female" onChange={formik.handleChange} /><label style={{marginRight:"35px"}}  for="female">Female</label>
                     <input name='gender' type='radio' id='others'  value="Others" onChange={formik.handleChange}/><label for="others">Others</label><span>{formik.errors.gender}</span><br/>
-                    <input name='gender' className='add-producer-inpt' value={formik.values.gender}/><br/>
+                    <input placeholder='Select The Producer Gender' name='gender' className='add-producer-inpt' value={formik.values.gender}/><br/>
                     <input  className='add-producer-inpt btn btn-success' type='submit' value="Submit" />
                 </div>
             </div>

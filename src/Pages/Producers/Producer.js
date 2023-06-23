@@ -37,10 +37,10 @@ function Producer() {
     </div>:
     <div className='container-fluid producer-container'>
         <div className='row' style={{marginBottom:"20px"}}>
-            <div className='col-3'>
+            <div className='col-md-3'>
                 <Link to="/addProducer" className='btn btn-primary'>Add Producer</Link>
             </div>
-            <div className='col-8' style={{textAlign:"start"}}>
+            <div className='col-md-8' style={{textAlign:"start"}}>
                 <input className='actor-search' placeholder='Search here.....' onChange={(e)=>{
                   setSearch(e.target.value)
                 }}/>
@@ -52,7 +52,7 @@ function Producer() {
                     return search.toLowerCase()===""?item : item.name.toLowerCase().includes(search.toLowerCase())
                 }).map((d)=>{
                     return(
-                        <div className='col-4 producer-card'>
+                        <div className='col-md-4 producer-card'>
                             <div>
                                 <img className='producer-img' src={d.img} alt='person-img'/>
                             </div>
